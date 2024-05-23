@@ -12,5 +12,10 @@ const guestName = [
     'Fiorello'
 ];
 
-const tableName = 'Tavolo Vip';
+const tableName = 'Table Vip';
 const place = [];
+
+for (let index = 1; index < guestName.length; index++) {
+    const guest = guestName[index];
+    console.log(guest);
+};
