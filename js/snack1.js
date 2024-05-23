@@ -1,4 +1,4 @@
-
+// array invitati
 const guestName = [
     'Brad Pitt',
     'Johnny Depp',
@@ -7,6 +7,7 @@ const guestName = [
     'Georgina Rodriguez',
     'Chiara Ferragni',
     'George Clooney',
+    'Amal Clooney',
     'Fedez',
     'Amadeus',
     'Fiorello'
@@ -15,7 +16,13 @@ const guestName = [
 const tableName = 'Table Vip';
 const place = [];
 
-for (let index = 1; index < guestName.length; index++) {
+for (let index = 0; index < guestName.length; index++) {
     const guest = guestName[index];
-    console.log(guest);
+    const postoAlTavolo = {
+        tableName: tableName,
+        guest: guest,
+        place: index + 1 
+    };
+    place.push(postoAlTavolo);
 };
+console.log(place);
