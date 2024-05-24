@@ -19,3 +19,12 @@ for (let index = 0; index < squadre.length; index++) {
     nomeFalli.push({nome, falli});
 }
 console.log(nomeFalli);
+
+
+const nomePunti = [];
+
+for (let x=0; x < squadre.length; x++) {
+    let { nome, punti } = squadre[x];
+    nomePunti.push({nome, punti});
+}
+console.log(nomePunti);
